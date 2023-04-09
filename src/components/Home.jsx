@@ -2,13 +2,22 @@ import React, { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import animation from "../assets/animation.json";
 import SingleCategory from "./Card/SingleCategory";
+import { useLoaderData } from "react-router-dom";
+import SingleFeature from "./Card/SingleFeature";
 const Home = () => {
 
-const [category, setCategory] = useState([]);
+  const [category, setCategory] = useState([]);
 
-useEffect(() => {
-    fetch('jobCategory.json').then(res => res.json()).then(data => setCategory(data))
-},[])
+  const features = useLoaderData();
+ 
+
+  useEffect(() => {
+    fetch("jobCategory.json")
+      .then((res) => res.json())
+      .then((data) => setCategory(data));
+  }, []);
+
+
 
   return (
     <div>
@@ -34,21 +43,45 @@ useEffect(() => {
 
       {/* main header section ends from here */}
 
+      {/* Job category section starts from here */}
+
+      <div className="my-16">
+        <h2 className="text-2xl font-bold text-center">Job Category List</h2>
+        <p className="text-center mt-2 text-gray-600">
+          Explore thousands of job opportunities with all the information you
+          need. Its your future
+        </p>
+
+        <div className="my-8 grid grid-cols-1 md:grid-cols-4 gap-6 px-2 lg:px-14">
+          {category.map((singleCategory) => (
+            <SingleCategory
+              key={singleCategory.id}
+              singleCategory={singleCategory}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Job category section starts from here */}
+
       {/* Features job section starts from here */}
 
-      <div className="my-12">
-        <h2 className="text-2xl font-bold text-center">Job Category List {category.length}</h2>
-        <p className="text-center mt-2 text-gray-600">Explore thousands of job opportunities with all the information you need. Its your future</p>
-      
-      <div className="my-8 grid grid-cols-1 md:grid-cols-4 gap-6 px-2 lg:px-14">
-        {
-            category.map(singleCategory => <SingleCategory
-            key={singleCategory.id}
-            singleCategory={singleCategory}
-            />)
-        }
+      <div className="my-16 container mt-24">
+      <h2 className="text-2xl font-bold text-center">Featured Jobs</h2>
+        <p className="text-center mt-2 text-gray-600">
+        Explore thousands of job opportunities with all the information you need. Its your future
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 mt-16">
+            {
+                features.map(singleFeature => <SingleFeature
+                key={singleFeature.id}
+                singleFeature={singleFeature}
+                />)
+            }
+        </div>
       </div>
-      </div>
+
+      <button className="common-btn mx-auto block my-16">See All Jobs</button>
     </div>
   );
 };

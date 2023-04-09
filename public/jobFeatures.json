@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "companyLogo": "https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "jobTitle": "Software Engineer",
+    "companyName": "ABC Company",
+    "remoteorOnsite": "Remote",
+    "location": "San Francisco, CA",
+    "fullTimeOrPartTime": "Full-time",
+    "salary": "$100,000 - $150,000",
+    "jobDescription": "We are looking for a software engineer to develop and maintain our web and mobile applications.",
+    "jobResponsibility": "- Develop and maintain software applications\n- Participate in code reviews\n- Troubleshoot and debug issues\n- Collaborate with cross-functional teams",
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+    "experiences": "3+ years of experience in software engineering",
+    "contactInformation": {
+      "phone": "123-456-7890",
+      "email": "jobs@abccompany.com"
+    }
+  },
+  {
+    "id": 2,
+    "companyLogo": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "jobTitle": "Marketing Manager",
+    "companyName": "XYZ Company",
+    "remoteorOnsite": "Onsite",
+    "location": "New York, NY",
+    "fullTimeOrPartTime": "Full-time",
+    "salary": "$80,000 - $120,000",
+    "jobDescription": "We are seeking a Marketing Manager to lead our marketing initiatives and drive growth for our brand.",
+    "jobResponsibility": "- Develop and execute marketing strategies\n- Conduct market research and analysis\n- Manage and lead a team of marketing professionals\n- Collaborate with cross-functional teams",
+    "educationalRequirements": "Bachelor's degree in Marketing or related field",
+    "experiences": "5+ years of experience in marketing",
+    "contactInformation": {
+      "phone": "555-123-4567",
+      "email": "jobs@xyzcompany.com"
+    }
+  },
+  {
+    "id": 3,
+    "companyLogo": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "jobTitle": "Financial Analyst",
+    "companyName": "The New Economical Company",
+    "remoteorOnsite": "Onsite",
+    "location": "London, UK",
+    "fullTimeOrPartTime": "Full-time",
+    "salary": "£60,000 - £80,000",
+    "jobDescription": "We are seeking a Financial Analyst to analyze financial data and provide insights to the company's financial performance.",
+    "jobResponsibility": "- Analyze and interpret financial data\n- Prepare financial reports and presentations\n- Identify trends and make recommendations\n- Collaborate with cross-functional teams",
+    "educationalRequirements": "Bachelor's degree in Finance, Accounting or related field",
+    "experiences": "3+ years of experience in financial analysis",
+    "contactInformation": {
+      "phone": "+44 20 1234 5678",
+      "email": "jobs@123company.com"
+    }
+  },
+  {
+    "id": 4,
+    "companyLogo": "https://images.unsplash.com/photo-1643297654526-d78132dfd25d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    "jobTitle": "Registered Nurse",
+    "companyName": "Medical Clinic",
+    "remoteorOnsite": "Onsite",
+    "location": "Los Angeles, CA",
+    "fullTimeOrPartTime": "Part-time",
+    "salary": "$30 - $40 per hour",
+    "jobDescription": "We arelooking for a registered nurse to join our team and provide quality patient care.",
+    "jobResponsibility": "- Administer medications and treatments\n- Monitor patient health and report any changes\n- Collaborate with healthcare professionals\n- Maintain accurate medical records",
+    "educationalRequirements": "Associate's degree in Nursing or related field",
+    "experiences": "1+ years of experience in nursing",
+    "contactInformation": {
+      "phone": "310-555-1234",
+      "email": "jobs@medicalclinic.com"
+    }
+  },
+  {
+    "id": 5,
+    "companyLogo": "https://images.unsplash.com/photo-1501163109389-abf37ca1276a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "jobTitle": "Graphic Designer",
+    "companyName": "Design Studio",
+    "remoteorOnsite": "Remote",
+    "location": "Anywhere",
+    "fullTimeOrPartTime": "Part-time",
+    "salary": "$20 - $30 per hour",
+    "jobDescription": "We are seeking a graphic designer to create engaging visual content for our clients.",
+    "jobResponsibility": "- Design visual content for print and digital media\n- Collaborate with clients to understand their needs\n- Manage multiple projects simultaneously\n- Meet deadlines and deliver high-quality work",
+    "educationalRequirements": "Bachelor's degree in Graphic Design or related field",
+    "experiences": "2+ years of experience in graphic design",
+    "contactInformation": {
+      "phone": "888-555-9876",
+      "email": "jobs@designstudio.com"
+    }
+  },
+  {
+    "id": 6,
+    "companyLogo": "https://images.unsplash.com/photo-1560264357-8d9202250f21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "jobTitle": "Customer Service Representative",
+    "companyName": "E-commerce Company",
+    "remoteorOnsite": "Remote",
+    "location": "Dallas, TX",
+    "fullTimeOrPartTime": "Full-time",
+    "salary": "$35,000 - $45,000",
+    "jobDescription": "We are seeking a customer service representative to provide exceptional customer support to our clients.",
+    "jobResponsibility": "- Respond to customer inquiries and concerns\n- Resolve issues and escalate when necessary\n- Communicate with customers via phone and email\n- Collaborate with cross-functional teams",
+    "educationalRequirements": "High School diploma or equivalent",
+    "experiences": "1+ years of experience in customer service",
+    "contactInformation": {
+      "phone": "214-555-6789",
+      "email": "jobs@ecommercecompany.com"
+    }
+  }
+]
