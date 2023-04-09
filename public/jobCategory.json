@@ -1,0 +1,26 @@
+[
+  {
+    "id": 4987498338,
+    "categoryName": "Technology",
+    "categoryLogo": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "jobAvailable": 231
+  },
+  {
+    "id": 27328726386,
+    "categoryName": "Marketing",
+    "categoryLogo": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+    "jobAvailable": 146
+  },
+  {
+    "id": 4872438723,
+    "categoryName": "Finance",
+    "categoryLogo": "https://plus.unsplash.com/premium_photo-1670213989452-100c125a6180?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+    "jobAvailable": 100
+  },
+  {
+    "id": 2978293987,
+    "categoryName": "Healthcare",
+    "categoryLogo": "https://images.unsplash.com/photo-1666214277767-b8c2a7b4c064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
+    "jobAvailable": 250
+  }
+]
