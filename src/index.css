@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.common-btn{
+    @apply bg-gradient-to-r from-violet-400 to-violet-500 px-4 py-2 font-bold text-white rounded-lg
+}
