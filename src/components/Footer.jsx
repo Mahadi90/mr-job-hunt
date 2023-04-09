@@ -42,7 +42,7 @@ const Footer = () => {
     <hr className="p-2 text-white mx-2 lg:mx-14" />
     <div className="text-white text-sm font-bold flex justify-between items-center mx-2 lg:mx-14 pb-16 py-6">
         <div>
-            <h2>&coppy;Coppyright 2023 bt Mahadi hasan</h2>
+            <h2>Coppyright 2023 by Mahadi hasan</h2>
         </div>
         <div>
             <p>Powered by CareerHub</p>

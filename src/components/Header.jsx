@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <nav className="flex justify-between py-8 px-2 md:px-14">
             <div>
-                <h2 className='text-3xl font-bold'>MRjobHub</h2>
+                <h2 className='text-3xl font-bold'><span className='text-violet-600'>MR</span>jobHub</h2>
             </div>
             <ul>
                 <Link className='text-violet-600 mx-6' to='/'>Home</Link>
