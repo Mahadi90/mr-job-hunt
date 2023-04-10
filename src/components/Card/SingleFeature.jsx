@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { CurrencyDollarIcon, MapPinIcon } from '@heroicons/react/24/solid'
+import { Link, useNavigate } from 'react-router-dom';
 
 const SingleFeature = ({singleFeature}) => {
+    
 
-const {companyLogo, jobTitle, companyName, location, remoteorOnsite, fullTimeOrPartTime, salary} = singleFeature;
+const {companyLogo, jobTitle, companyName, location, remoteorOnsite, fullTimeOrPartTime, salary,id} = singleFeature;
 
     return (
         <div className='mx-auto border-2 rounded-lg p-4 px-6 w-4/5'>
@@ -18,7 +20,9 @@ const {companyLogo, jobTitle, companyName, location, remoteorOnsite, fullTimeOrP
                 <p className='flex'><MapPinIcon className="h-6 w-6 text-gray-400 mr-2" />{location}</p>
                 <p className='flex'><CurrencyDollarIcon className="h-6 w-6 text-gray-400 mr-2" />{salary}</p>
             </div>
-            <button className='common-btn my-2'>View Details</button>
+           <Link to={`/${id}`}><button className='common-btn my-2'>View Details</button></Link>
+       
+           
         </div>
     );
 };

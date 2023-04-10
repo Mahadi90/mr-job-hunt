@@ -77,7 +77,7 @@
     "jobTitle": "Graphic Designer",
     "companyName": "Design Studio",
     "remoteorOnsite": "Remote",
-    "location": "Anywhere",
+    "location": "Dhaka, Bangladesh",
     "fullTimeOrPartTime": "Part-time",
     "salary": "$20 - $30 per hour",
     "jobDescription": "We are seeking a graphic designer to create engaging visual content for our clients.",
@@ -102,9 +102,7 @@
     "jobResponsibility": "- Respond to customer inquiries and concerns\n- Resolve issues and escalate when necessary\n- Communicate with customers via phone and email\n- Collaborate with cross-functional teams",
     "educationalRequirements": "High School diploma or equivalent",
     "experiences": "1+ years of experience in customer service",
-    "contactInformation": {
-      "phone": "214-555-6789",
-      "email": "jobs@ecommercecompany.com"
-    }
+    "phone": "214-555-6789",
+    "email": "jobs@ecommercecompany.com"
   }
 ]

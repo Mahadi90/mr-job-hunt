@@ -4,19 +4,18 @@ import animation from "../assets/animation.json";
 import SingleCategory from "./Card/SingleCategory";
 import { useLoaderData } from "react-router-dom";
 import SingleFeature from "./Card/SingleFeature";
+import JobDetails from "./JobDetails";
 const Home = () => {
 
   const [category, setCategory] = useState([]);
 
   const features = useLoaderData();
- 
 
   useEffect(() => {
     fetch("jobCategory.json")
       .then((res) => res.json())
       .then((data) => setCategory(data));
   }, []);
-
 
 
   return (
@@ -76,6 +75,7 @@ const Home = () => {
                 features.map(singleFeature => <SingleFeature
                 key={singleFeature.id}
                 singleFeature={singleFeature}
+                // handleJobDetails={handleJobDetails}
                 />)
             }
         </div>
