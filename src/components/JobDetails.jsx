@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 import {
   CurrencyDollarIcon,
   MapPinIcon,
@@ -25,6 +25,7 @@ const JobDetails = () => {
   }, []);
 
   // console.log(job);
+
 
   return (
     <div>
@@ -106,7 +107,7 @@ const JobDetails = () => {
           {job.location}
         </p>
 
-        <button className="common-btn w-96 mt-12">Apply Now</button>
+       <Link to='/appliedjob'> <button className="common-btn w-96 mt-12">Apply Now</button></Link>
       </div>
     </div>
   </div>
