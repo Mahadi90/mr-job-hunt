@@ -10,6 +10,7 @@ import ErrorPage from './components/ErrorPage'
 import ApliedJob from './components/ApliedJob'
 import JobDetails from './components/JobDetails'
 import SingleFeature from './components/Card/SingleFeature'
+import { appliedAllJob } from './loader/showApplyJob'
 
 
 const router = createBrowserRouter([
@@ -34,7 +35,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/appliedjob',
-        element: <ApliedJob/>
+        element: <ApliedJob/>,
+        loader: () => fetch("jobFeatures.json")
       },
       {
         path: '/blog',

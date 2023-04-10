@@ -1,45 +1,45 @@
 // use local storage to manage cart data
 const addToDb = id => {
-    let shoppingCart = {}
+    let appliedJob = {}
   
     //get the shopping cart from local storage
-    const storedCart = localStorage.getItem('shopping-cart')
-    if (storedCart) {
-      shoppingCart = JSON.parse(storedCart)
+    const storedJob = localStorage.getItem('applied-job')
+    if (storedJob) {
+      appliedJob = JSON.parse(storedJob)
     }
   
     // add quantity
-    const quantity = shoppingCart[id]
+    const quantity = appliedJob[id]
     if (quantity) {
       const newQuantity = quantity + 1
-      shoppingCart[id] = newQuantity
+      appliedJob[id] = newQuantity
     } else {
-      shoppingCart[id] = 1
+      appliedJob[id] = 1
     }
-    localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart))
+    localStorage.setItem('applied-job', JSON.stringify(appliedJob))
   }
   
-  const getStoredCart = () => {
-    let shoppingCart = {}
+  const getStoredJob = () => {
+    let appliedJob = {}
   
     //get the shopping cart from local storage
-    const storedCart = localStorage.getItem('shopping-cart')
-    if (storedCart) {
-      shoppingCart = JSON.parse(storedCart)
+    const storedJob = localStorage.getItem('applied-job')
+    if (storedJob) {
+      appliedJob = JSON.parse(storedJob)
     }
-    return shoppingCart
+    return appliedJob
   }
   
   const removeFromDb = id => {
-    const storedCart = localStorage.getItem('shopping-cart')
-    if (storedCart) {
-      const shoppingCart = JSON.parse(storedCart)
-      if (id in shoppingCart) {
-        delete shoppingCart[id]
-        localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart))
+    const storedJob = localStorage.getItem('applied-job')
+    if (storedJob) {
+      const appliedJob = JSON.parse(storedJob)
+      if (id in appliedJob) {
+        delete appliedJob[id]
+        localStorage.setItem('applied-job', JSON.stringify(appliedJob))
       }
     }
   }
   
   
-  export { addToDb, getStoredCart, removeFromDb}
+  export { addToDb, getStoredJob, removeFromDb}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
+import { useLoaderData,  useParams } from "react-router-dom";
 import {
   CurrencyDollarIcon,
   MapPinIcon,
@@ -7,6 +7,7 @@ import {
   EnvelopeIcon,
   BriefcaseIcon,
 } from "@heroicons/react/24/solid";
+import { addToDb, getStoredJob } from "../utils/fakeDb";
 
 const JobDetails = () => {
   const detailsData = useLoaderData();
@@ -25,6 +26,10 @@ const JobDetails = () => {
   }, []);
 
   // console.log(job);
+
+  const handleAddToAplly = id => {
+     addToDb(id)
+  }
 
 
   return (
@@ -107,7 +112,7 @@ const JobDetails = () => {
           {job.location}
         </p>
 
-       <Link to='/appliedjob'> <button className="common-btn w-96 mt-12">Apply Now</button></Link>
+        <button onClick={() => handleAddToAplly(job.id)} className="common-btn w-96 mt-12 hover:w-[96%]">Apply Now</button>
       </div>
     </div>
   </div>

@@ -4,7 +4,7 @@ import animation from "../assets/animation.json";
 import SingleCategory from "./Card/SingleCategory";
 import { useLoaderData } from "react-router-dom";
 import SingleFeature from "./Card/SingleFeature";
-import JobDetails from "./JobDetails";
+
 const Home = () => {
 
   const [category, setCategory] = useState([]);
