@@ -2,6 +2,8 @@ import React from "react";
 import { getStoredJob } from "../utils/fakeDb";
 import { useLoaderData } from "react-router-dom";
 import MyApplyJob from "./Card/MyApplyJob";
+import Lottie from "lottie-react";
+import banner from "../assets/banner.json"
 
 const ApliedJob = () => {
   const allJob = useLoaderData();
@@ -20,9 +22,13 @@ const ApliedJob = () => {
   //   console.log(initialJobs);
   return (
     <div>
-      <h2 className="text-2xl font-bold text-center pt-12 pb-24 bg-gradient-to-r from-gray-300 to-gray-100">
-        Applied Jobs
+      <div className='flex justify-around pt-12 pb-24 bg-gradient-to-r from-gray-300 to-gray-100'>
+      <Lottie className='w-40 h-14' animationData={banner} loop={true} />
+      <h2 className="text-2xl font-bold text-center"> 
+        Applied Job
       </h2>
+      <Lottie className='w-40 h-14' animationData={banner} loop={true} />
+      </div>
       <div className="mt-12 mb-2 px-44 flex gap-2 justify-end">
         <button className="common-btn">Remote</button>
         <button className="bg-gray-200 px-4 py-2 font-bold rounded-md text-black">Onsite</button>

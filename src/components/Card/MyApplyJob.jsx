@@ -15,7 +15,7 @@ const MyApplyJob = ({ myjobs }) => {
   } = myjobs;
 
   return (
-    <div className="flex w-3/4 mx-auto gap-6 border p-6 items-center rounded">
+    <div className="flex w-full lg:w-3/4 mx-auto gap-6 border p-6 items-center rounded">
       <img className="w-44 rounded h-44" src={companyLogo} alt="" />
       <div>
         <h2 className="text-xl my-2 font-bold text-gray-800">{jobTitle}</h2>

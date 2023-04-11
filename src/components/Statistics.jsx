@@ -1,4 +1,6 @@
 import React from 'react';
+import Lottie from "lottie-react";
+import banner from "../assets/banner.json"
 import {
     ComposedChart,
     Line,
@@ -51,9 +53,14 @@ const data = [
 
     return (
         <div>
-            <h2 className="text-2xl font-bold text-center pt-8 pb-14 bg-gradient-to-r from-gray-300 to-gray-100">
-        Assignment Marks
+      
+      <div className='flex justify-around pt-12 pb-24 bg-gradient-to-r from-gray-300 to-gray-100'>
+      <Lottie className='w-40 h-14' animationData={banner} loop={true} />
+      <h2 className="text-2xl font-bold text-center"> 
+        Statistics : Assignment Marks
       </h2>
+      <Lottie className='w-40 h-14' animationData={banner} loop={true} />
+      </div>
       <div className='w-96 ms-14 my-12'>
         <ComposedChart
         width={1200}

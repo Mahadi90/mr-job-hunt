@@ -49,7 +49,7 @@ const Header = () => {
                       title='Close Menu'
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      <XMarkIcon className='w-5 text-gray-600' />
+                      <XMarkIcon className='w-8 text-red-600' />
                     </button>
                   </div>
                 </div>

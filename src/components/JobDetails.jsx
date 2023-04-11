@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData,  useParams } from "react-router-dom";
+import Lottie from "lottie-react";
+import banner from "../assets/banner.json"
 import {
   CurrencyDollarIcon,
   MapPinIcon,
@@ -7,7 +9,7 @@ import {
   EnvelopeIcon,
   BriefcaseIcon,
 } from "@heroicons/react/24/solid";
-import { addToDb, getStoredJob } from "../utils/fakeDb";
+import { addToDb} from "../utils/fakeDb";
 
 const JobDetails = () => {
   const detailsData = useLoaderData();
@@ -34,9 +36,13 @@ const JobDetails = () => {
 
   return (
     <div>
-    <h2 className="text-2xl font-bold text-center pt-12 pb-24 bg-gradient-to-r from-gray-300 to-gray-100">
-      Job Details
-    </h2>
+   <div className='flex justify-around pt-12 pb-24 bg-gradient-to-r from-gray-300 to-gray-100'>
+      <Lottie className='w-40 h-14' animationData={banner} loop={true} />
+      <h2 className="text-2xl font-bold text-center"> 
+       Job Details
+      </h2>
+      <Lottie className='w-40 h-14' animationData={banner} loop={true} />
+      </div>
     <div className="lg:flex px-2 lg:px-14 gap-6 my-16">
       <div className="w-full">
         <p className="mt-4">
@@ -57,7 +63,7 @@ const JobDetails = () => {
         </p>
       </div>
 
-      <div className="bg-gray-100 w-[50%] py-4 px-2 rounded-lg">
+      <div className="bg-gray-100 w-full lg:w-[50%] py-4 px-2 rounded-lg mt-6 lg:mt-0">
         <h2 className="text-2xl font-bold my-4">Job Details</h2>
 
         <hr className="border-gray-400 my-2" />
