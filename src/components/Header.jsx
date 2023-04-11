@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link , NavLink } from 'react-router-dom';
 import {
     BoltIcon,
     Bars3BottomRightIcon,
@@ -16,10 +16,10 @@ const Header = () => {
                 <h2 className='text-3xl font-bold'><span className='text-violet-600'>MR</span>jobHub</h2>
             </div>
             <ul className='hidden lg:flex'>
-                <Link className='text-violet-600 mx-6' to='/'>Home</Link>
-                <Link className='text-violet-600 mx-6' to='/statistics'>Statistics</Link>
-                <Link className='text-violet-600 mx-6' to='/appliedjob'>Applied Job</Link>
-                <Link className='text-violet-600 mx-6' to='/blog'>Blog</Link>
+                <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to='/'>Home</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to='/statistics'>Statistics</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to='/appliedjob'>Applied Job</NavLink>
+                <NavLink className={({ isActive }) => (isActive ? 'active' : 'default')} to='/blog'>Blog</NavLink>
             </ul>
             <div className='lg:hidden'>
           {/* Dropdown Open Button */}

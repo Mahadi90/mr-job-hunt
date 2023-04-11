@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.common-btn{
-    @apply bg-gradient-to-r from-violet-400 to-violet-500 px-4 py-2 font-bold text-white rounded-md
+.common-btn {
+  @apply bg-gradient-to-r from-violet-400 to-violet-500 px-4 py-2 font-bold text-white rounded-md;
 }
-.container{
-    @apply mx-2 md:mx-14
+.container {
+  @apply mx-2 md:mx-14;
+}
+.active {
+  @apply font-bold tracking-wide text-violet-800 transition-colors duration-200 mx-2;
+}
+.default {
+  @apply font-semibold tracking-wide text-violet-600 transition-colors duration-200 hover:text-violet-800 mx-2;
 }
