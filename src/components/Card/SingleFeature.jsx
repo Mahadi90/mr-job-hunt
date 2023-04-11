@@ -8,7 +8,7 @@ const SingleFeature = ({singleFeature}) => {
 const {companyLogo, jobTitle, companyName, location, remoteorOnsite, fullTimeOrPartTime, salary,id} = singleFeature;
 
     return (
-        <div className='mx-auto border-2 rounded-lg p-4 px-6 w-4/5'>
+        <div className='mx-auto border-2 rounded-lg p-4 px-6 w-full'>
             <img className='w-48 h-24 rounded-lg' src={companyLogo} alt="" />
             <h2 className='text-xl my-2 font-bold text-gray-800'>{jobTitle}</h2>
             <p className='text-gray-500 font-semibold'>{companyName}</p>

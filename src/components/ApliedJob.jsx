@@ -42,8 +42,8 @@ const ApliedJob = () => {
       </div>
       <h2 className="text-violet-500 text-2xl font-semibold p-2">{(initialJobs.length > 0 ? 'You have applied these Job' : 'You have not apply any job yet')}</h2>
       <div className="mt-12 mb-2 px-44 flex gap-2 justify-end">
+      <button onClick={() => handleFilterClick('Onsite')} className="bg-gray-200 px-4 py-2 font-bold rounded-md text-black">Onsite</button>
         <button onClick={() => handleFilterClick('Remote')} className="common-btn">Remote</button>
-        <button onClick={() => handleFilterClick('Onsite')} className="bg-gray-200 px-4 py-2 font-bold rounded-md text-black">Onsite</button>
       </div>
       <div className="my-2 container flex flex-col gap-6">
         {filteredJobs.map((myjobs) => (

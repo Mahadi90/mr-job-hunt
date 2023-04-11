@@ -11,7 +11,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState()
 
     return (
-        <nav className="flex justify-between py-8 px-2 md:px-14 bg-gradient-to-r from-gray-300 to-gray-100">
+        <nav className="flex justify-between py-8 px-2 md:px-14 bg-gradient-to-r from-gray-300 to-gray-100 w-full">
             <div>
                 <h2 className='text-3xl font-bold'><span className='text-violet-600'>MR</span>jobHub</h2>
             </div>

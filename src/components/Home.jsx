@@ -28,7 +28,7 @@ const handleSeeMoreBtn = () => {
     <div>
       {/* main header section starts from here */}
 
-      <div className="lg:flex justify-between items-center container">
+      <div className="lg:flex justify-between items-center container w-11/12 mx-auto">
         <div>
           <h1 className="text-7xl font-bold">
             One Step Closer To Your <br />{" "}
@@ -50,7 +50,7 @@ const handleSeeMoreBtn = () => {
 
       {/* Job category section starts from here */}
 
-      <div className="my-16">
+      <div className="my-16 w-11/12 mx-auto">
         <h2 className="text-2xl font-bold text-center">Job Category List</h2>
         <p className="text-center mt-2 text-gray-600">
           Explore thousands of job opportunities with all the information you
@@ -71,7 +71,7 @@ const handleSeeMoreBtn = () => {
 
       {/* Features job section starts from here */}
 
-      <div className="my-16 container mt-24">
+      <div className="my-16 container mt-24 w-11/12 mx-auto">
       <h2 className="text-2xl font-bold text-center">Featured Jobs</h2>
         <p className="text-center mt-2 text-gray-600">
         Explore thousands of job opportunities with all the information you need. Its your future

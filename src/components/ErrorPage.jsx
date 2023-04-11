@@ -1,10 +1,13 @@
 import React from 'react';
+import Lottie from "lottie-react";
+import errorpage from "../assets/404 error page.json";
 
 const ErrorPage = () => {
     return (
-        <div className='text-center min-h-scree'>
-            <h2 className='text-6xl font-bold'>404</h2>
-            <p className='text-red-500 text-4xl font-bold'>Not Found Page</p>
+        <div className='flex items-center justify-center flex-col'>
+           
+            <Lottie className='w-2/5 h-2/5' animationData={errorpage} loop={true} />
+            <h3 className='text-3xl font-bold text-gray-700'>Opps! This page was not Found</h3>
         </div>
     );
 };
