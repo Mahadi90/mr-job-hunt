@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { getStoredJob } from "../utils/fakeDb";
 import { useLoaderData } from "react-router-dom";
 import MyApplyJob from "./Card/MyApplyJob";
@@ -19,7 +19,18 @@ const ApliedJob = () => {
       initialJobs.push(findJob);
     }
   }
-  //   console.log(initialJobs);
+
+  //  for the filter job
+  const [filterValue, setFilterValue] = useState('all')
+
+  const filteredJobs = filterValue === 'all' ? initialJobs : initialJobs.filter(job => job.remoteorOnsite === filterValue);
+
+
+  const handleFilterClick = (value) => {
+    setFilterValue(value);
+  };
+
+
   return (
     <div>
       <div className='flex justify-around pt-12 pb-24 bg-gradient-to-r from-gray-300 to-gray-100'>
@@ -31,11 +42,11 @@ const ApliedJob = () => {
       </div>
       <h2 className="text-violet-500 text-2xl font-semibold p-2">{(initialJobs.length > 0 ? 'You have applied these Job' : 'You have not apply any job yet')}</h2>
       <div className="mt-12 mb-2 px-44 flex gap-2 justify-end">
-        <button className="common-btn">Remote</button>
-        <button className="bg-gray-200 px-4 py-2 font-bold rounded-md text-black">Onsite</button>
+        <button onClick={() => handleFilterClick('Remote')} className="common-btn">Remote</button>
+        <button onClick={() => handleFilterClick('Onsite')} className="bg-gray-200 px-4 py-2 font-bold rounded-md text-black">Onsite</button>
       </div>
       <div className="my-2 container flex flex-col gap-6">
-        {initialJobs.map((myjobs) => (
+        {filteredJobs.map((myjobs) => (
           <MyApplyJob key={myjobs.id} myjobs={myjobs}></MyApplyJob>
         ))}
       </div>

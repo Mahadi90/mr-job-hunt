@@ -20,7 +20,7 @@ const Home = () => {
   // for the see all data btn
   const [seeMore, setSeeMore] = useState(4)
 const handleSeeMoreBtn = () => {
-  setSeeMore (seeMore + 2);
+  setSeeMore (seeMore + features.length);
 }
 
 
