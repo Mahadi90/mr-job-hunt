@@ -34,7 +34,7 @@ const JobDetails = () => {
 
   return (
     <div>
-    <h2 className="text-2xl font-bold text-center pt-12 pb-24 bg-gradient-to-r from-slate-400 to-slate-200">
+    <h2 className="text-2xl font-bold text-center pt-12 pb-24 bg-gradient-to-r from-gray-300 to-gray-100">
       Job Details
     </h2>
     <div className="lg:flex px-2 lg:px-14 gap-6 my-16">
@@ -76,8 +76,7 @@ const JobDetails = () => {
         <p className="my-2 text-gray-500 flex">
           <BriefcaseIcon className="h-6 w-6 text-indigo-400 mr-2" />
           <span
-            className="font
-            -bold text-gray-500"
+            className="font-bold text-gray-500"
           >
             Job Title
           </span>
@@ -112,7 +111,7 @@ const JobDetails = () => {
           {job.location}
         </p>
 
-        <button onClick={() => handleAddToAplly(job.id)} className="common-btn w-96 mt-12 hover:w-[96%]">Apply Now</button>
+        <button onClick={() => handleAddToAplly(job.id)} className="common-btn w-96 mt-12">Apply Now</button>
       </div>
     </div>
   </div>

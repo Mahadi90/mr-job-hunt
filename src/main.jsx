@@ -9,8 +9,7 @@ import Blog from './components/Blog'
 import ErrorPage from './components/ErrorPage'
 import ApliedJob from './components/ApliedJob'
 import JobDetails from './components/JobDetails'
-import SingleFeature from './components/Card/SingleFeature'
-import { appliedAllJob } from './loader/showApplyJob'
+
 
 
 const router = createBrowserRouter([

@@ -20,7 +20,7 @@ const ApliedJob = () => {
   //   console.log(initialJobs);
   return (
     <div>
-      <h2 className="text-2xl font-bold text-center pt-12 pb-24 bg-gradient-to-r from-slate-400 to-slate-200">
+      <h2 className="text-2xl font-bold text-center pt-12 pb-24 bg-gradient-to-r from-gray-300 to-gray-100">
         Applied Jobs
       </h2>
       <div className="mt-12 mb-2 px-44 flex gap-2 justify-end">
