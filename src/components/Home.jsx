@@ -17,6 +17,12 @@ const Home = () => {
       .then((data) => setCategory(data));
   }, []);
 
+  // for the see all data btn
+  const [seeMore, setSeeMore] = useState(4)
+const handleSeeMoreBtn = () => {
+  setSeeMore (seeMore + 2);
+}
+
 
   return (
     <div>
@@ -72,7 +78,7 @@ const Home = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8 mt-16">
             {
-                features.map(singleFeature => <SingleFeature
+                features.slice(0, seeMore).map(singleFeature => <SingleFeature
                 key={singleFeature.id}
                 singleFeature={singleFeature}
                 // handleJobDetails={handleJobDetails}
@@ -80,8 +86,12 @@ const Home = () => {
             }
         </div>
       </div>
-
-      <button className="common-btn mx-auto block my-16">See All Jobs</button>
+      {
+        seeMore < features.length && (
+          
+      <button onClick={handleSeeMoreBtn} className="common-btn mx-auto block my-16">See All Jobs</button>
+        )
+      }
     </div>
   );
 };

@@ -29,6 +29,7 @@ const ApliedJob = () => {
       </h2>
       <Lottie className='w-40 h-14' animationData={banner} loop={true} />
       </div>
+      <h2 className="text-violet-500 text-2xl font-semibold p-2">{(initialJobs.length > 0 ? 'You have applied these Job' : 'You have not apply any job yet')}</h2>
       <div className="mt-12 mb-2 px-44 flex gap-2 justify-end">
         <button className="common-btn">Remote</button>
         <button className="bg-gray-200 px-4 py-2 font-bold rounded-md text-black">Onsite</button>
